@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .block__grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .form {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .grid__item {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    label {
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ko‘prik tayanchiga tushadigan yuklar va ularning birikmalarini aniqlash</h1>
+  <form class="form">
+    <div class="block__grid">
+      <div class="grid__item">
+        <label > H(0) = 
+          <input type="text" required id="H0">
+        </label>
+        <label > A(0) = 
+          <input type="text" required id="A0">
+        </label>
+
+        <label > V(0) = 
+          <input type="text" required id="V0">
+        </label>
+        <label > A(f) = 
+          <input type="text" required id="Af">
+        </label>
+        <label > h(0) = 
+          <input type="text" required id="h0">
+        </label>
+        <label > V(jb1) = 
+          <input type="text" required id="V_jb1">
+        </label>
+        <label > V(jb2) = 
+          <input type="text" required id="V_jb2">
+        </label>
+        <label > l(p1) = 
+          <input type="text" required id="l_p1">
+        </label>
+        <label > l(p2) = 
+          <input type="text" required id="l_p2">
+        </label>
+        <label > N(tq1) = 
+          <input type="text" required id="N_tq1">
+        </label>
+        <label > N(tq2) = 
+          <input type="text" required id="N_tq2">
+        </label>
+        <label > v = 
+          <input type="text" required id="v">
+        </label>
+        <label > b = 
+          <input type="text" required id="b">
+        </label>
+        <label > PMQHB  = 
+          <input type="text" required id="PMQHB">
+        </label>
+        <label > PUS  = 
+          <input type="text" required id="PUS">
+        </label>
+
+
+      </div>
+
+      <div class="grid__item">
+        <p>N(tayanch) = <span id="n_tayanch">0</span></p>
+        <p>N(wn_tick) = <span id="n_wn_tick">0</span></p>
+        <p>N(wn) = <span id="n_wn">0</span></p>
+        <p>N(pp) = <span id="n_pp">0</span></p>
+        <p>N(vp) = <span id="n_vp">0</span></p>
+        <p>N(vn) = <span id="n_vn">0</span></p>
+        <p>beta = <span id="beta">0</span></p>
+        <p>alfa = <span id="alfa">0</span></p>
+        <p>omega = <span id="omega">0</span></p>
+        <p>C(k) = <span id="Ck">0</span></p>
+        <p>l(1) = <span id="l1">0</span></p>
+        <p>l(2) = <span id="l2">0</span></p>
+        <p>S(hn) = <span id="S_hn">0</span></p>
+        <p>F(hl) = <span id="F_hl">0</span></p>
+        <p>h(nl) = <span id="h_nl">0</span></p>
+
+      </div>
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
